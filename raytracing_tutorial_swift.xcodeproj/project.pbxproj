@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		749D3AFF2841AAAD00E1484A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AFE2841AAAD00E1484A /* Tests_iOS.swift */; };
+		749D3B012841AAAD00E1484A /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3B002841AAAD00E1484A /* Tests_iOSLaunchTests.swift */; };
+		749D3B0B2841AAAD00E1484A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3B0A2841AAAD00E1484A /* Tests_macOS.swift */; };
+		749D3B0D2841AAAD00E1484A /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3B0C2841AAAD00E1484A /* Tests_macOSLaunchTests.swift */; };
+		749D3B0E2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AE62841AAA700E1484A /* raytracing_tutorial_swiftApp.swift */; };
+		749D3B0F2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AE62841AAA700E1484A /* raytracing_tutorial_swiftApp.swift */; };
+		749D3B102841AAAD00E1484A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AE72841AAA700E1484A /* ContentView.swift */; };
+		749D3B112841AAAD00E1484A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AE72841AAA700E1484A /* ContentView.swift */; };
+		749D3B122841AAAD00E1484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749D3AE82841AAAD00E1484A /* Assets.xcassets */; };
+		749D3B132841AAAD00E1484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749D3AE82841AAAD00E1484A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		749D3AFB2841AAAD00E1484A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 749D3AE12841AAA700E1484A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 749D3AEC2841AAAD00E1484A;
+			remoteInfo = "raytracing_tutorial_swift (iOS)";
+		};
+		749D3B072841AAAD00E1484A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 749D3AE12841AAA700E1484A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 749D3AF22841AAAD00E1484A;
+			remoteInfo = "raytracing_tutorial_swift (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		749D3AE62841AAA700E1484A /* raytracing_tutorial_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raytracing_tutorial_swiftApp.swift; sourceTree = "<group>"; };
+		749D3AE72841AAA700E1484A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		749D3AE82841AAAD00E1484A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		749D3AED2841AAAD00E1484A /* raytracing_tutorial_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raytracing_tutorial_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		749D3AF32841AAAD00E1484A /* raytracing_tutorial_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raytracing_tutorial_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		749D3AF52841AAAD00E1484A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		749D3AFA2841AAAD00E1484A /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749D3AFE2841AAAD00E1484A /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		749D3B002841AAAD00E1484A /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		749D3B062841AAAD00E1484A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749D3B0A2841AAAD00E1484A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		749D3B0C2841AAAD00E1484A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		749D3AEA2841AAAD00E1484A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AF02841AAAD00E1484A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AF72841AAAD00E1484A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3B032841AAAD00E1484A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		749D3AE02841AAA700E1484A = {
+			isa = PBXGroup;
+			children = (
+				749D3AE52841AAA700E1484A /* Shared */,
+				749D3AF42841AAAD00E1484A /* macOS */,
+				749D3AFD2841AAAD00E1484A /* Tests iOS */,
+				749D3B092841AAAD00E1484A /* Tests macOS */,
+				749D3AEE2841AAAD00E1484A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		749D3AE52841AAA700E1484A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				749D3AE62841AAA700E1484A /* raytracing_tutorial_swiftApp.swift */,
+				749D3AE72841AAA700E1484A /* ContentView.swift */,
+				749D3AE82841AAAD00E1484A /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		749D3AEE2841AAAD00E1484A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				749D3AED2841AAAD00E1484A /* raytracing_tutorial_swift.app */,
+				749D3AF32841AAAD00E1484A /* raytracing_tutorial_swift.app */,
+				749D3AFA2841AAAD00E1484A /* Tests iOS.xctest */,
+				749D3B062841AAAD00E1484A /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		749D3AF42841AAAD00E1484A /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				749D3AF52841AAAD00E1484A /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		749D3AFD2841AAAD00E1484A /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				749D3AFE2841AAAD00E1484A /* Tests_iOS.swift */,
+				749D3B002841AAAD00E1484A /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		749D3B092841AAAD00E1484A /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				749D3B0A2841AAAD00E1484A /* Tests_macOS.swift */,
+				749D3B0C2841AAAD00E1484A /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		749D3AEC2841AAAD00E1484A /* raytracing_tutorial_swift (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749D3B162841AAAD00E1484A /* Build configuration list for PBXNativeTarget "raytracing_tutorial_swift (iOS)" */;
+			buildPhases = (
+				749D3AE92841AAAD00E1484A /* Sources */,
+				749D3AEA2841AAAD00E1484A /* Frameworks */,
+				749D3AEB2841AAAD00E1484A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "raytracing_tutorial_swift (iOS)";
+			productName = "raytracing_tutorial_swift (iOS)";
+			productReference = 749D3AED2841AAAD00E1484A /* raytracing_tutorial_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		749D3AF22841AAAD00E1484A /* raytracing_tutorial_swift (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749D3B192841AAAD00E1484A /* Build configuration list for PBXNativeTarget "raytracing_tutorial_swift (macOS)" */;
+			buildPhases = (
+				749D3AEF2841AAAD00E1484A /* Sources */,
+				749D3AF02841AAAD00E1484A /* Frameworks */,
+				749D3AF12841AAAD00E1484A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "raytracing_tutorial_swift (macOS)";
+			productName = "raytracing_tutorial_swift (macOS)";
+			productReference = 749D3AF32841AAAD00E1484A /* raytracing_tutorial_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		749D3AF92841AAAD00E1484A /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749D3B1C2841AAAD00E1484A /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				749D3AF62841AAAD00E1484A /* Sources */,
+				749D3AF72841AAAD00E1484A /* Frameworks */,
+				749D3AF82841AAAD00E1484A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749D3AFC2841AAAD00E1484A /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 749D3AFA2841AAAD00E1484A /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		749D3B052841AAAD00E1484A /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749D3B1F2841AAAD00E1484A /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				749D3B022841AAAD00E1484A /* Sources */,
+				749D3B032841AAAD00E1484A /* Frameworks */,
+				749D3B042841AAAD00E1484A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749D3B082841AAAD00E1484A /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 749D3B062841AAAD00E1484A /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		749D3AE12841AAA700E1484A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					749D3AEC2841AAAD00E1484A = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					749D3AF22841AAAD00E1484A = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					749D3AF92841AAAD00E1484A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 749D3AEC2841AAAD00E1484A;
+					};
+					749D3B052841AAAD00E1484A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 749D3AF22841AAAD00E1484A;
+					};
+				};
+			};
+			buildConfigurationList = 749D3AE42841AAA700E1484A /* Build configuration list for PBXProject "raytracing_tutorial_swift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 749D3AE02841AAA700E1484A;
+			productRefGroup = 749D3AEE2841AAAD00E1484A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				749D3AEC2841AAAD00E1484A /* raytracing_tutorial_swift (iOS) */,
+				749D3AF22841AAAD00E1484A /* raytracing_tutorial_swift (macOS) */,
+				749D3AF92841AAAD00E1484A /* Tests iOS */,
+				749D3B052841AAAD00E1484A /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		749D3AEB2841AAAD00E1484A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B122841AAAD00E1484A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AF12841AAAD00E1484A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B132841AAAD00E1484A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AF82841AAAD00E1484A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3B042841AAAD00E1484A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		749D3AE92841AAAD00E1484A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B102841AAAD00E1484A /* ContentView.swift in Sources */,
+				749D3B0E2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AEF2841AAAD00E1484A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B112841AAAD00E1484A /* ContentView.swift in Sources */,
+				749D3B0F2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3AF62841AAAD00E1484A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B012841AAAD00E1484A /* Tests_iOSLaunchTests.swift in Sources */,
+				749D3AFF2841AAAD00E1484A /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749D3B022841AAAD00E1484A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749D3B0D2841AAAD00E1484A /* Tests_macOSLaunchTests.swift in Sources */,
+				749D3B0B2841AAAD00E1484A /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		749D3AFC2841AAAD00E1484A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 749D3AEC2841AAAD00E1484A /* raytracing_tutorial_swift (iOS) */;
+			targetProxy = 749D3AFB2841AAAD00E1484A /* PBXContainerItemProxy */;
+		};
+		749D3B082841AAAD00E1484A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 749D3AF22841AAAD00E1484A /* raytracing_tutorial_swift (macOS) */;
+			targetProxy = 749D3B072841AAAD00E1484A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		749D3B142841AAAD00E1484A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		749D3B152841AAAD00E1484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		749D3B172841AAAD00E1484A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.raytracing-tutorial-swift";
+				PRODUCT_NAME = raytracing_tutorial_swift;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		749D3B182841AAAD00E1484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.raytracing-tutorial-swift";
+				PRODUCT_NAME = raytracing_tutorial_swift;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		749D3B1A2841AAAD00E1484A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.raytracing-tutorial-swift";
+				PRODUCT_NAME = raytracing_tutorial_swift;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		749D3B1B2841AAAD00E1484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.raytracing-tutorial-swift";
+				PRODUCT_NAME = raytracing_tutorial_swift;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		749D3B1D2841AAAD00E1484A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "raytracing_tutorial_swift (iOS)";
+			};
+			name = Debug;
+		};
+		749D3B1E2841AAAD00E1484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "raytracing_tutorial_swift (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		749D3B202841AAAD00E1484A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "raytracing_tutorial_swift (macOS)";
+			};
+			name = Debug;
+		};
+		749D3B212841AAAD00E1484A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yujun.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "raytracing_tutorial_swift (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		749D3AE42841AAA700E1484A /* Build configuration list for PBXProject "raytracing_tutorial_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749D3B142841AAAD00E1484A /* Debug */,
+				749D3B152841AAAD00E1484A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749D3B162841AAAD00E1484A /* Build configuration list for PBXNativeTarget "raytracing_tutorial_swift (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749D3B172841AAAD00E1484A /* Debug */,
+				749D3B182841AAAD00E1484A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749D3B192841AAAD00E1484A /* Build configuration list for PBXNativeTarget "raytracing_tutorial_swift (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749D3B1A2841AAAD00E1484A /* Debug */,
+				749D3B1B2841AAAD00E1484A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749D3B1C2841AAAD00E1484A /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749D3B1D2841AAAD00E1484A /* Debug */,
+				749D3B1E2841AAAD00E1484A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749D3B1F2841AAAD00E1484A /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749D3B202841AAAD00E1484A /* Debug */,
+				749D3B212841AAAD00E1484A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 749D3AE12841AAA700E1484A /* Project object */;
+}
