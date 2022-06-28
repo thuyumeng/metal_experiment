@@ -11,7 +11,7 @@ import SwiftUI
 struct raytracing_tutorial_swiftApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MetalView()
         }
     }
 }

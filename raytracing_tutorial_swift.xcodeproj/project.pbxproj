@@ -17,6 +17,12 @@
 		749D3B112841AAAD00E1484A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D3AE72841AAA700E1484A /* ContentView.swift */; };
 		749D3B122841AAAD00E1484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749D3AE82841AAAD00E1484A /* Assets.xcassets */; };
 		749D3B132841AAAD00E1484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749D3AE82841AAAD00E1484A /* Assets.xcassets */; };
+		74CE7F3A28435B2D00F493C7 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE7F3928435B2D00F493C7 /* MetalView.swift */; };
+		74EDAD20285FF5A2004E3BCE /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EDAD1F285FF5A2004E3BCE /* MetalView.swift */; };
+		74EDAD2F2860D26C004E3BCE /* ComputeRayTracing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EDAD2E2860D26C004E3BCE /* ComputeRayTracing.swift */; };
+		74EDAD302860D26C004E3BCE /* ComputeRayTracing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EDAD2E2860D26C004E3BCE /* ComputeRayTracing.swift */; };
+		74EDAD322860D3B1004E3BCE /* ray_compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74EDAD312860D3B1004E3BCE /* ray_compute.metal */; };
+		74EDAD332860D3B1004E3BCE /* ray_compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74EDAD312860D3B1004E3BCE /* ray_compute.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		749D3B062841AAAD00E1484A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749D3B0A2841AAAD00E1484A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		749D3B0C2841AAAD00E1484A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		74CE7F3928435B2D00F493C7 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		74EDAD1F285FF5A2004E3BCE /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		74EDAD2E2860D26C004E3BCE /* ComputeRayTracing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeRayTracing.swift; sourceTree = "<group>"; };
+		74EDAD312860D3B1004E3BCE /* ray_compute.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ray_compute.metal; sourceTree = "<group>"; };
+		74EDAD3A2860DA62004E3BCE /* random_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = random_header.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +97,7 @@
 		749D3AE02841AAA700E1484A = {
 			isa = PBXGroup;
 			children = (
+				74CE7F3828435AD000F493C7 /* iOS */,
 				749D3AE52841AAA700E1484A /* Shared */,
 				749D3AF42841AAAD00E1484A /* macOS */,
 				749D3AFD2841AAAD00E1484A /* Tests iOS */,
@@ -97,9 +109,12 @@
 		749D3AE52841AAA700E1484A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				74EDAD212860C883004E3BCE /* random */,
 				749D3AE62841AAA700E1484A /* raytracing_tutorial_swiftApp.swift */,
 				749D3AE72841AAA700E1484A /* ContentView.swift */,
 				749D3AE82841AAAD00E1484A /* Assets.xcassets */,
+				74EDAD2E2860D26C004E3BCE /* ComputeRayTracing.swift */,
+				74EDAD312860D3B1004E3BCE /* ray_compute.metal */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -118,6 +133,7 @@
 		749D3AF42841AAAD00E1484A /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				74EDAD1F285FF5A2004E3BCE /* MetalView.swift */,
 				749D3AF52841AAAD00E1484A /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -139,6 +155,22 @@
 				749D3B0C2841AAAD00E1484A /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		74CE7F3828435AD000F493C7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74CE7F3928435B2D00F493C7 /* MetalView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		74EDAD212860C883004E3BCE /* random */ = {
+			isa = PBXGroup;
+			children = (
+				74EDAD3A2860DA62004E3BCE /* random_header.metal */,
+			);
+			path = random;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CE7F3A28435B2D00F493C7 /* MetalView.swift in Sources */,
 				749D3B102841AAAD00E1484A /* ContentView.swift in Sources */,
 				749D3B0E2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */,
+				74EDAD2F2860D26C004E3BCE /* ComputeRayTracing.swift in Sources */,
+				74EDAD322860D3B1004E3BCE /* ray_compute.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EDAD20285FF5A2004E3BCE /* MetalView.swift in Sources */,
 				749D3B112841AAAD00E1484A /* ContentView.swift in Sources */,
 				749D3B0F2841AAAD00E1484A /* raytracing_tutorial_swiftApp.swift in Sources */,
+				74EDAD302860D26C004E3BCE /* ComputeRayTracing.swift in Sources */,
+				74EDAD332860D3B1004E3BCE /* ray_compute.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				DEVELOPMENT_TEAM = RRLMHU7G28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -493,7 +531,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZXQYC3SA66;
+				DEVELOPMENT_TEAM = RRLMHU7G28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
